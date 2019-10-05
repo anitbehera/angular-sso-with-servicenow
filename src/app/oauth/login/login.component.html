@@ -1,0 +1,14 @@
+<div class="bg"></div>
+
+<div class="py-5 text-center">
+    <button class="btn btn-sm" style="background-color: #3F51B5!important;" (click)="onSignin(snowform)">
+            <img src="/assets/img/snow-logo.png" style="float:center;width: 200px;">
+    </button>
+</div>
+
+<form style="display:none" #snowform action="https://dev70643.service-now.com/oauth_auth.do">
+    <input type="hidden" name="response_type" value="token" />
+    <input type="hidden" name="client_id" value="06296f0d9e404010b3bab5ab0696e1a7" />
+    <input type="hidden" name="redirect_uri" value="http://localhost:4200/oauth/callback" />
+    <input type="hidden" name="state" value="login" />
+</form>
