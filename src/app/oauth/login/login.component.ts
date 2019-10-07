@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -11,9 +12,13 @@ export class LoginComponent implements OnInit {
   client_id = "06296f0d9e404010b3bab5ab0696e1a7";
   redirect_uri = "http://localhost:4200";
   state = "login";
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+    let token = localStorage.getItem('access_token');
+    if(token){
+      this.router.navigate(['/home']);
+    }
   }
 
   onSignin(snowform){

@@ -1,15 +1,27 @@
-body,
-html {
-  height: 100%;
-}
-
-.bg {
-  /* The image used */
-  background-image: url("/assets/img/bg.jpg") no-repeat center;
-  /* Full height */
-  height: 100%;
-  /* Center and scale the image nicely */
-  background-position: center;
+.jumbotron {
+  height: calc(112vh);
+  margin-bottom: 0px;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-image:url("/assets/img/bg.jpg");
+}
+.card-container.card {
+  max-width: 360px;
+  padding: 70px 40px;
+  margin-top: 0;
+  margin-right: 5%;
+  background: transparent;
+  border: 1px solid #009688;
+  
+}
+.card {
+  padding: 20px 25px 30px;
+  margin: 0 auto 25px;
+  margin-top: 50px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
 }

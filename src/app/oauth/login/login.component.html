@@ -1,9 +1,13 @@
-<div class="bg"></div>
-
-<div class="py-5 text-center">
-    <button class="btn btn-sm" style="background-color: #3F51B5!important;" (click)="onSignin(snowform)">
-            <img src="/assets/img/snow-logo.png" style="float:center;width: 200px;">
-    </button>
+<div class="jumbotron" style="padding-top: 0px;">
+    <div class="card card-container">            
+        <p class="col text-center justify-content-center align-self-center" style="color: #fff;">Please Login with ServiceNow.</p>
+        <p class="col text-center justify-content-center align-self-center" style="color: #fff;">username : public <br> password : public</p>
+        <div class="col text-center justify-content-center align-self-center" style="padding-top: 30px;">
+            <button class="btn btn-md" style="background-color: #FF5722!important;" (click)="onSignin(snowform)">
+                <img src="assets/img/snow-logo.png" style="float:center;width: 200px;">
+            </button>
+        </div>
+    </div>
 </div>
 
 <form style="display:none" #snowform action="https://dev70643.service-now.com/oauth_auth.do">
